@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 
 .container-main {
@@ -25,14 +26,14 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
     padding: 1rem;
     width: 100%;
-    max-width: 650px;
-    height: auto;
+    max-width: 620px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
     text-align: center;
+    margin: 10px;
 }
 
 .title {
@@ -42,44 +43,109 @@
 }
 
 .sub-title {
-
+    width: 100%;
     padding: 12px;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
 }
 
 .container-input {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.input {
+.input-element {
    width: 100%; 
    max-width: 300px;
    padding: 10px;
    border: none;
    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
-   font-size: 1rem;
+   font-size: 0.85rem;
+   margin: 10px;
    font-family: "Poppins", sans-serif;
+   border-radius: 10px;
+   border: 1px solid rgba(128, 128, 128, 0.753);
+}
+
+.input-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
 }
 
 .button {
     padding: 5px;
     font-family: "Poppins", sans-serif;
-    background-color: #DFF6E3;
+    font-weight: 500;
+    background-color: #28a745;
+    color: white;
     border: none;
     width: 100%;
     max-width: 300px;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 1s;
     border-radius: 15px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .button:hover {
-    background-color: #28a745;
-    color: white;
-    transform: scale(1.1);
+    transform: translateY(-5px);
+}
+
+.icon {
+    max-width: 32px;
+    object-fit: cover;
+}
+
+.container-resultado {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.92rem;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: .70rem;
+    font-style: italic;
+}
+
+
+@media (max-width: 480px) {
+
+    .title {
+        padding: 10px;
+        font-size: 1.5rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .sub-title {
+        width: 100%;
+        padding: 12px;
+        font-size: 0.90rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+
 }

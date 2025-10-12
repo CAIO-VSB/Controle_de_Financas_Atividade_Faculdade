@@ -10,24 +10,84 @@
     <main class="main">
         <div class="container-main">
 
+            <!-- Título -->
             <header>
-                <h2 class="title">Suas finanças</h2>
+                <h2 class="title">Controle de Gastos Semanais</h2>
             </header>
 
+            <!-- SubTítulos -->
             <div class="sub-title">
-                <p>Ao inserir seu gastos ao longo de 7 dias, o programa irá mostrar o gasto geral e sua média</p>
-                <h3>Insira seus gastos logo abaixo</3>
+                <p>Acompanhe seus gastos e veja seu total! </p>
+                <br>
+                <hr style="width: 100%; color: rgba(128, 128, 128, 0.61);">
             </div>
-            <br>
-            <div class="container-input">
-                <input id="input" class="input" type="text">
-            </div>
-            <br>
+
+            <!-- Inputs -->
+             <div class="container-input">
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-segunda" placeholder="Segunda-feira" class="input-element"  type="number">
+                </div>
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-terca" placeholder="Terça-feira" class="input-element" type="number">
+                </div>
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-quarta" placeholder="Quarta-feira" class="input-element" type="number">
+                </div>
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-quinta" placeholder="Quinta-feira" class="input-element"type="number">
+                </div>
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-sexta" placeholder="Sexta-feira" class="input-element" type="number">
+                </div>
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-sabado" placeholder="Sábado" class="input-element" type="number">
+                </div>
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-domingo" placeholder="Domingo" class="input-element" type="number">
+                </div> 
+
+             </div>
+            <!-- Botões -->
             <div style="width: 100%;">
-                <button onclick="teste()" id="button" class="button" type="button">Mostrar total</button>
+                <button onclick="CalcularTotalMedia()" id="button" class="button" type="button">Total / Média</button>
             </div>
-            <div>
-                <p id="mensagem">teste</p>
+
+            <hr style="width: 100%; margin: 10px;">
+            <!-- Mensagem de erro ou sucesso -->
+            <div class="container-resultado">
+
+                <header>
+                    <h3>Confira o resultado abaixo</h3>
+                    <p style="font-size: 0.65rem;">*Preencha os campos acima com seus gastos e clique no botão para calcular o total e a média da semana.</p>
+                </header>
+                <table class="table" border="2" style="width: 100%;">
+                    <tr style="width: 100%;">
+                        <th style="padding: 5px;">
+                            <p id="totalSemana"></p>
+                        </th>
+                    </tr>
+                    <th style="padding: 5px;">
+                        <p id="totalMedia"></p>
+                    </th>
+                </table>
+            </div>
+
+            <div class="footer">
+                <footer>“Lembre-se: pequenos gastos somam grandes resultados 😉”</footer>
             </div>
         </div>
     </main>
