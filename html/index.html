@@ -14,7 +14,7 @@
             <header>
                 <h2 class="title">Controle de Gastos Semanais</h2>
             </header>
-
+            
             <!-- SubTítulos -->
             <div class="sub-title">
                 <p>Acompanhe seus gastos e veja seu total! </p>
@@ -27,43 +27,52 @@
 
                 <div class="input-item">
                     <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
-                    <input id="input-segunda" placeholder="Segunda-feira" class="input-element"  type="number">
+                    <input id="teste" placeholder="Teste" class="input-element"  type="text">
                 </div>
 
                 <div class="input-item">
                     <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
-                    <input id="input-terca" placeholder="Terça-feira" class="input-element" type="number">
+                    <input id="input-segunda" onkeydown="teste()" placeholder="Segunda-feira" class="input-element"  type="text">
                 </div>
 
                 <div class="input-item">
                     <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
-                    <input id="input-quarta" placeholder="Quarta-feira" class="input-element" type="number">
+                    <input id="input-terca" placeholder="Terça-feira" class="input-element" type="text">
                 </div>
 
                 <div class="input-item">
                     <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
-                    <input id="input-quinta" placeholder="Quinta-feira" class="input-element"type="number">
+                    <input id="input-quarta" placeholder="Quarta-feira" class="input-element" type="text">
                 </div>
 
                 <div class="input-item">
                     <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
-                    <input id="input-sexta" placeholder="Sexta-feira" class="input-element" type="number">
+                    <input id="input-quinta" placeholder="Quinta-feira" class="input-element"type="text">
                 </div>
 
                 <div class="input-item">
                     <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
-                    <input id="input-sabado" placeholder="Sábado" class="input-element" type="number">
+                    <input id="input-sexta" placeholder="Sexta-feira" class="input-element" type="text">
                 </div>
 
                 <div class="input-item">
                     <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
-                    <input id="input-domingo" placeholder="Domingo" class="input-element" type="number">
+                    <input id="input-sabado" placeholder="Sábado" class="input-element" type="text">
+                </div>
+
+                <div class="input-item">
+                    <i><img class="icon" src="/assets/calendar.png" alt="calendar"></i>
+                    <input id="input-domingo" placeholder="Domingo" class="input-element" type="text">
                 </div> 
 
              </div>
             <!-- Botões -->
             <div style="width: 100%;">
                 <button onclick="CalcularTotalMedia()" id="button" class="button" type="button">Total / Média</button>
+            </div>
+
+            <div style="width: 50%;">
+                <button onclick="teste()" id="button" class="button" type="button">Teste de interação</button>
             </div>
 
             <hr style="width: 100%; margin: 10px;">
